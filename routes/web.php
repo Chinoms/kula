@@ -21,6 +21,32 @@ Route::get('our-history', function () {
     return view('our-history');
 });
 
+Route::get('autonomous-communities', function () {
+    return view('autonomous-communities');
+});
+
+
+
+Route::get('food-fruits', function () {
+    return view('food-fruits');
+});
+
+
+Route::get('communities-settlements', function () {
+    return view('communities-settlements');
+});
+
+
+Route::get('wrestling', function () {
+    return view('wrestling');
+});
+
+
+Route::get('masquerades', function () {
+    return view('masquerades');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

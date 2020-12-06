@@ -63,9 +63,9 @@
                                              <li class="">
                                                 <a href="">Heritage</a>
                                             <ul class="submenu">
-                                                    <li><a href="our_history.html">History</a></li>
-                                                    <li><a href="14-autonomous-communities.html">14 autonomous communities</a></li>
-                                                    <li><a href="communities-settlements.html">100 Communities Settlements</a>
+                                                    <li><a href="our-history">History</a></li>
+                                                    <li><a href="autonomous-communities">14 autonomous communities</a></li>
+                                                    <li><a href="communities-settlements">100 Communities Settlements</a>
                                                      </li>
                                                     
                                                 </ul>
@@ -74,9 +74,9 @@
                                             <li class="">
                                                 <a href="">Culture</a>
                                             <ul class="submenu">
-                                                    <li><a href="food-fruits.html">Kula Foods  & Fruits</a></li>
-                                                    <li><a href="wrestling.html">Wrestling</a></li>
-                                                    <li><a href="Masquerades.html">Masquerades</a>
+                                                    <li><a href="food-fruits">Kula Foods  & Fruits</a></li>
+                                                    <li><a href="wrestling">Wrestling</a></li>
+                                                    <li><a href="masquerades">Masquerades</a>
                                                      </li>
                                                      
                                                     
@@ -138,55 +138,11 @@
 
     <footer>
         <!--? Footer Start-->
-        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.png">
+        <div class="footer-area section-bg" data-background="{{asset('img/gallery/footer_bg.png')}}">
             <div class="container">
                 
                 
-                <div class="section-top-border">
-					<h3></h3>
-					<div class="row gallery-item">
-						<div class="col-md-4">
-							<a href="assets/img/elements/L1.jpeg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L1.jpeg);"></div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="assets/img/elements/L3.JPG" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L3.JPG);"></div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="assets/img/elements/L7.JPG" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L7.JPG);"></div>
-							</a>
-						</div>
-						<div class="col-md-6">
-							<a href="assets/img/elements/L4.JPG" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L4.JPG);"></div>
-							</a>
-						</div>
-						<div class="col-md-6">
-							<a href="assets/img/elements/L8.JPG" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L8.JPG);"></div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="assets/img/elements/L5.JPG" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L5.JPG);"></div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="assets/img/elements/L10.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L10.jpg);"></div>
-							</a>
-						</div>
-						<div class="col-md-4">
-							<a href="assets/img/elements/L11.png" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/L11.png);"></div>
-							</a>
-						</div>
-					</div>
-				</div>
+                
 				
                 <div class="footer-top footer-padding">
                     <div class="row d-flex justify-content-between">
