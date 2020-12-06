@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
+
 class PostController extends Controller
 {
     /**
@@ -16,7 +17,10 @@ class PostController extends Controller
     {
         //
     }
-
+    public function home()
+    {
+        return view('homepage');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -45,7 +49,7 @@ class PostController extends Controller
         $postData->post_description = $request->post_description;
         $postData->post_body = $request->post_body;
         $postData->post_featured_img = $request->post_featured_img;
-        $postData->post_author_id = Auth::user()->id; 
+        $postData->post_author_id = Auth::user()->id;
         $postData->post_status = 1;
         $postData->save();
         //return $request;

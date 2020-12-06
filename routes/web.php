@@ -62,5 +62,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('new-article', 'App\Http\Controllers\PostController@create');
 	Route::post('savearticle', 'App\Http\Controllers\PostController@store');
+
+	Route::get('homepage', 'App\Http\Controllers\PostController@home');
 });
 
