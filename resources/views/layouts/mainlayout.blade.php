@@ -98,8 +98,8 @@
                                                     
                                                 </ul>
                                           
-                                            <li><a href="">News</a></li>
-                                            <li><a href="">Media</a></li>
+                                            <!--li><a href="">News</a></li>
+                                            <li><a href="">Media</a></li-->
                                            <!-- <li><a href="">NGO's</a></li>-->
                                             <li class="">
                                                 <a href="">NGO's</a>
