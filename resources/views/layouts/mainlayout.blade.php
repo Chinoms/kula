@@ -32,7 +32,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/loader.png" alt="">
+                    <img src="{{asset('img/logo/loader.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/Kula kingdom.png" alt="" width="250"></a>
+                                <a href="/"><img src="{{asset('img/Kula kingdom.png')}}" alt="" width="250"></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
@@ -56,7 +56,7 @@
                                 <div class="main-menu f-right d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li class="active"><a href="/">Home</a></li>
                                            <!-- <li><a href="about.html">About</a></li>-->
                                             <!--<li><a href="">Heritage</a></li>-->
                                             
@@ -81,7 +81,7 @@
                                                      
                                                     
                                                 </ul>
-                                              <li><a href="bpl.html">Belemaoil</a></li>
+                                              <li><a href="bpl">Belemaoil</a></li>
                                             
                                             <li><a href="portfolio.html">Gallery</a></li>
                                             <li class="">
@@ -104,15 +104,15 @@
                                             <li class="">
                                                 <a href="">NGO's</a>
                                             <ul class="submenu">
-                                                    <li><a href="kkga.html">KKGA</a></li>
-                                                    <li><a href="nukks.html">NUKKS</a></li>
-                                                    <li><a href="kyo.html">K Y O</a></li>
+                                                    <li><a href="kkga">KKGA</a></li>
+                                                    <li><a href="nukks">NUKKS</a></li>
+                                                    <li><a href="kyo">K Y O</a></li>
                                                 </ul>
                                             
-                                            <li><a href="agegrades.html">Age Grades</a></li>
+                                            <li><a href="agegrades">Age Grades</a></li>
                                           <!--  <li><a href="blog.html">Blog</a></li>-->
                                             <li><a href="https://www.gofundme.com/f/kula-community-fund">Donate</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="contact">Contact</a></li>
                                              <!--   </ul>
                                             </li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -150,7 +150,7 @@
                             <div class="single-footer-caption mb-50">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/loader.png" alt=""></a>
+                                    <a href="index.html"><img src="{{asset('img/logo/loader.png')}}" alt=""></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">

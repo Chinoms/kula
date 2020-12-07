@@ -47,6 +47,36 @@ Route::get('masquerades', function () {
 });
 
 
+Route::get('kkga', function () {
+    return view('kkga');
+});
+
+
+Route::get('nukks', function () {
+    return view('nukks');
+});
+
+
+Route::get('kyo', function () {
+    return view('kyo');
+});
+
+
+Route::get('agegrades', function () {
+    return view('agegrades');
+});
+
+
+Route::get('contact', function () {
+    return view('contact');
+});
+
+
+Route::get('bpl', function () {
+    return view('bpl');
+});
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -93,6 +123,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('new-article', 'App\Http\Controllers\PostController@create');
 	Route::post('savearticle', 'App\Http\Controllers\PostController@store');
 
-	Route::get('homepage', 'App\Http\Controllers\PostController@home');
+	//Route::get('homepage', 'App\Http\Controllers\PostController@home');
 });
 

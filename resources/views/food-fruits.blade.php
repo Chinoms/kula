@@ -60,43 +60,43 @@
 					<h3>KULA FOODS AND FRUITS</h3>
 					<div class="row gallery-item">
 						<div class="col-md-4">
-							<a href="assets/img/elements/KF1.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF1.jpg);"></div>
+							<a href="{{asset('img/elements/KF1.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF1.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="assets/img/elements/KF2.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF2.jpg);"></div>
+							<a href="{{asset('img/elements/KF2.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF2.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="assets/img/elements/KF3.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF3.jpg);"></div>
+							<a href="{{asset('img/elements/KF3.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF3.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-6">
-							<a href="assets/img/elements/KF4.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF4.jpg);"></div>
+							<a href="{{asset('img/elements/KF4.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF4.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-6">
-							<a href="assets/img/elements/KF5.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF5.jpg);"></div>
+							<a href="{{asset('img/elements/KF5.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF5.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="assets/img/elements/KF6.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF6.jpg);"></div>
+							<a href="{{asset('img/elements/KF6.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF6.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="assets/img/elements/KF7.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF7.jpg);"></div>
+							<a href="{{asset('img/elements/KF7.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF7.jpg')}});"></div>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="assets/img/elements/KF8.jpg" class="img-pop-up">
-								<div class="single-gallery-image" style="background: url(assets/img/elements/KF8.jpg);"></div>
+							<a href="{{asset('img/elements/KF8.jpg')}}" class="img-pop-up">
+								<div class="single-gallery-image" style="background: url({{asset('img/elements/KF8.jpg')}});"></div>
 							</a>
 						</div>
 					</div>

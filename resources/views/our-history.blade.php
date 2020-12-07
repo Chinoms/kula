@@ -92,7 +92,7 @@
                  <h3 class="mb-30">The Present Kula Settlement</h3>
                  <div class="row">
                      <div class="col-md-3">
-                         <img src="assets/img/gallery/kroma1.png" alt="" class="img-fluid">
+                         <img src="{{asset('img/gallery/kroma1.png')}}" alt="" class="img-fluid">
                      </div>
                      <div class="col-md-9 mt-sm-20">
                          <p>From Opu-Kula, Sara moved southward and, after crossing the San Batholomew River (Aguda Toru)
@@ -125,7 +125,7 @@
                              Chief Dan Opusingi took the chairmanship from Chief Anthony Opuari who also died in the attack alongside Chief Obaye Ojuka, Chief Telema Eferebo. With the developments of 2010, the leadership structure has the Amanyanabo-in-Council, King (Sir) Dr Kroma Amabibi Eleki-Sara XIV at the helm of affairs.</p>
                      </div>
                      <div class="col-md-3">
-                         <img src="assets/img/gallery/okko.png" alt="" class="img-fluid">
+                         <img src="{{asset('img/gallery/okko.png')}}" alt="" class="img-fluid">
                      </div>
                  </div>
              </div>

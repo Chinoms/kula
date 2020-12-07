@@ -89,7 +89,7 @@
                 <h3 class="mb-30">Age grade Contest</h3>
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="assets/img/elements/wrest11.PNG" alt="" class="img-fluid">
+                        <img src="{{asset('img/elements/wrest11.PNG')}}" alt="" class="img-fluid">
                     </div>
                     <div class="col-md-9 mt-sm-20">
                         <p>The wrestling is usually initiated by a few men who will convince their age grade to challenge the older age grade.
@@ -108,7 +108,7 @@
                 <h3 class="mb-30">Wrestling Sessions</h3>
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="assets/img/elements/wrest22.PNG" alt="" class="img-fluid">
+                        <img src="{{asset('img/elements/wrest22.PNG')}}" alt="" class="img-fluid">
                     </div>
                     <div class="col-md-9 mt-sm-20">
                         <p>There are usually two sessions, one in the morning. The drummers will start playing about 4 O’clock in the morning but the event starts before sunrise at about 7 a.m. and last about two hours.
