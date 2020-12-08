@@ -14,66 +14,66 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+	return view('homepage');
 });
 
 Route::get('our-history', function () {
-    return view('our-history');
+	return view('our-history');
 });
 
 Route::get('autonomous-communities', function () {
-    return view('autonomous-communities');
+	return view('autonomous-communities');
 });
 
 
 
 Route::get('food-fruits', function () {
-    return view('food-fruits');
+	return view('food-fruits');
 });
 
 
 Route::get('communities-settlements', function () {
-    return view('communities-settlements');
+	return view('communities-settlements');
 });
 
 
 Route::get('wrestling', function () {
-    return view('wrestling');
+	return view('wrestling');
 });
 
 
 Route::get('masquerades', function () {
-    return view('masquerades');
+	return view('masquerades');
 });
 
 
 Route::get('kkga', function () {
-    return view('kkga');
+	return view('kkga');
 });
 
 
 Route::get('nukks', function () {
-    return view('nukks');
+	return view('nukks');
 });
 
 
 Route::get('kyo', function () {
-    return view('kyo');
+	return view('kyo');
 });
 
 
 Route::get('agegrades', function () {
-    return view('agegrades');
+	return view('agegrades');
 });
 
 
 Route::get('contact', function () {
-    return view('contact');
+	return view('contact');
 });
 
 
 Route::get('bpl', function () {
-    return view('bpl');
+	return view('bpl');
 });
 
 
@@ -122,7 +122,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('new-article', 'App\Http\Controllers\PostController@create');
 	Route::post('savearticle', 'App\Http\Controllers\PostController@store');
-
+	Route::get('list-articles', 'App\Http\Controllers\PostController@listArticles');
+	Route::get('edit/{id}', 'App\Http\Controllers\PostController@show');
+	Route::post('update-post', 'App\Http\Controllers\PostController@update');
 	//Route::get('homepage', 'App\Http\Controllers\PostController@home');
 });
-

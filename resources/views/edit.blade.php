@@ -60,12 +60,12 @@
                         myWidget.open();
                     }, false);
                 </script>
-                <form method="post" action="savearticle" autocomplete="off" class="form-horizontal">
+                <form method="post" action="../update-post" autocomplete="off" class="form-horizontal">
                     @csrf
-
+                    <input type="hidden" value="{{ request()->route('id') }}" name="id">
                     <div class="card ">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title">{{ __('New Article') }}</h4>
+                            <h4 class="card-title">{{ __('Edit Article') }}</h4>
                             <!--p class="card-category">{{ __('User information') }}</p-->
                         </div>
                         <div class="card-body ">
@@ -77,7 +77,7 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Title') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <input class="form-control" name="title" id="input-name" type="text" placeholder="{{ __('Title') }}" value="{{ old('name') }}" />
+                                        <input class="form-control" name="title" id="input-name" type="text" placeholder="{{ __('Title') }}" value="{{ $getArticle->title }}" />
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Featured Image') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <input class="form-control" name="post_featured_img" id="input-name" type="text" value="{{ old('post_featured_image') }}" style="z-index:1; position:static; opacity:1" />
+                                        <input class="form-control" name="post_featured_img" id="input-name" type="text" value="{{ $getArticle->post_featured_img }}" style="z-index:1; position:static; opacity:1" />
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Post Body') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="post_body">{{ old('post_body') }}</textarea>
+                                        <textarea class="form-control" name="post_body">{{ $getArticle->post_body }}</textarea>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +104,17 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Description') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <input class="form-control" name="post_description" type="text" placeholder="{{ __('Post description') }}" value="{{ old('post_description') }}" max="255" />
+                                        <input class="form-control" name="post_description" type="text" placeholder="{{ __('Post description') }}" value="{{ $getArticle->post_description }}" max="255" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <label class="col-sm-2 col-form-label">{{ __('Date') }}</label>
+                                <div class="col-sm-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="date" type="date" placeholder="{{ __('Post Date') }}" value="{{ $getArticle->created_at }}"/>
                                     </div>
                                 </div>
                             </div>
