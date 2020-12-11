@@ -90,16 +90,18 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Include stylesheet -->
+                            <textarea id="summernote" name="post_body">Post Body</textarea>
 
-
-                            <div class="row">
+                           
+                            <!--div class="row">
                                 <label class="col-sm-2 col-form-label">{{ __('Post Body') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="post_body">{{ old('post_body') }}</textarea>
+                                        <textarea class=" textatrea form-control" name="post_body">{{ old('post_body') }}</textarea>
                                     </div>
                                 </div>
-                            </div>
+                            </div-->
                             <div class="row">
                                 <label class="col-sm-2 col-form-label">{{ __('Description') }}</label>
                                 <div class="col-sm-7">
