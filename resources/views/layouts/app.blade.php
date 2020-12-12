@@ -16,9 +16,7 @@
     <link href="{{ asset('material') }}/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{ asset('material') }}/demo/demo.css" rel="stylesheet" />
-    <script src="https://cdn.tiny.cloud/1/p0ycf09ohea74wzte1ao2kjufkefvsrr7kpdbja7hoi70bi2/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>tinymce.init({selector:'textarea'});</script>
-    
+    <script src="https://cdn.tiny.cloud/1/aegktxu2c9vh3lcer166axjn1t8y0ayi0h547w408hra2khz/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     </head>
     <body class="{{ $class ?? '' }}">
         @auth()
@@ -79,14 +77,7 @@
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
         <script src="{{ asset('material') }}/demo/demo.js"></script>
         <script src="{{ asset('material') }}/js/settings.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-  <div id="summernote"><p>Hello Summernote</p></div>
-  <script>
-    $(document).ready(function() {
-        $('#summernote').summernote();
-    });
-  </script>
+      
         @stack('js')
     </body>
 </html>

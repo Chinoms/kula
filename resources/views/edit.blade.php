@@ -96,7 +96,14 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Post Body') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="post_body">{{ $getArticle->post_body }}</textarea>
+                                        <textarea class=" textatrea form-control" name="post_body">{{ old('post_body') }}</textarea>
+                                        <script>
+                                            tinymce.init({
+                                                selector: 'textarea',
+                                                plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                                                toolbar_mode: 'floating',
+                                            });
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +121,7 @@
                                 <label class="col-sm-2 col-form-label">{{ __('Date') }}</label>
                                 <div class="col-sm-7">
                                     <div class="form-group">
-                                        <input class="form-control" name="date" type="date" placeholder="{{ __('Post Date') }}" value="{{ $getArticle->created_at }}"/>
+                                        <input class="form-control" name="date" type="date" placeholder="{{ __('Post Date') }}" value="{{ $getArticle->created_at }}" />
                                     </div>
                                 </div>
                             </div>

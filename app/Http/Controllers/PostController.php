@@ -46,6 +46,8 @@ class PostController extends Controller
             'post_description' => 'required',
         ]);
         $postData = new Post();
+        $slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $request->title);
+        $postData->slug = $slug;
         $postData->title = $request->title;
         $postData->post_description = $request->post_description;
         $postData->post_body = $request->post_body;
@@ -69,6 +71,12 @@ class PostController extends Controller
         $getArticle = Post::find($id);
         //return $getArticle->title;
         return view('edit')->with('getArticle', $getArticle);
+    }
+
+    public function readArticle($id)
+    {
+        $getArticle = Post::find($id);
+        return view('article')->with('getArticle', $getArticle);
     }
 
     public function listArticles()
@@ -115,7 +123,7 @@ class PostController extends Controller
                 'post_featured_img' => $request->post_featured_img,
                 'created_at' => $request->date
             ]);
-            return back()->with('message', 'Post updated!');
+        return back()->with('message', 'Post updated!');
     }
 
     /**

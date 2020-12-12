@@ -84,6 +84,8 @@ Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');
 
+Route::get('article/{$slug}', 'App\Http\Controllers\PostController@readArticles');
+
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('table-list', function () {
 		return view('pages.table_list');
@@ -112,6 +114,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('upgrade', function () {
 		return view('pages.upgrade');
 	})->name('upgrade');
+	
 });
 
 Route::group(['middleware' => 'auth'], function () {
@@ -125,5 +128,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('list-articles', 'App\Http\Controllers\PostController@listArticles');
 	Route::get('edit/{id}', 'App\Http\Controllers\PostController@show');
 	Route::post('update-post', 'App\Http\Controllers\PostController@update');
+	
 	//Route::get('homepage', 'App\Http\Controllers\PostController@home');
 });
