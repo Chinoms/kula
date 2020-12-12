@@ -13,9 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-	return view('homepage');
-});
+// Route::get('/', function () {
+// 	return view('homepage');
+// });
+
+Route::get('/', 'App\Http\Controllers\PostController@showHome');
 
 Route::get('our-history', function () {
 	return view('our-history');
@@ -84,7 +86,7 @@ Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');
 
-Route::get('article/{$slug}', 'App\Http\Controllers\PostController@readArticles');
+Route::get('/{slug}', 'App\Http\Controllers\PostController@readArticle');
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('table-list', function () {
@@ -128,6 +130,8 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('list-articles', 'App\Http\Controllers\PostController@listArticles');
 	Route::get('edit/{id}', 'App\Http\Controllers\PostController@show');
 	Route::post('update-post', 'App\Http\Controllers\PostController@update');
+	
+
 	
 	//Route::get('homepage', 'App\Http\Controllers\PostController@home');
 });

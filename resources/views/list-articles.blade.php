@@ -27,7 +27,7 @@
                                     <tr>
                                         <td>{{$loop->iteration}}</td>
                                         <td>{{$article->post_description}}</td>
-                                        <td><button class="btn btn-success">View Article</button>
+                                        <td><a href="article/{{ $article->slug }} " target="_blank"><button class="btn btn-success">View Article</button></a>
                                            <a href="edit/{{$article->id}}" <button class="btn btn-primary">Edit Article</button></a>
                                         </td>
                                     </tr>

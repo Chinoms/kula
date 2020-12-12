@@ -756,44 +756,28 @@
                     </div>
                 </div>
                 <div class="row">
+                    @foreach($articles as $article)
                     <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="home-blog-single mb-30">
                             <div class="blog-img-cap">
                                 <div class="blog-img">
-                                    <img src="{{asset('img/gallery/home-blog1.png')}}" alt="">
+                                    <img src="{{ $article->post_featured_img }}" alt="">
                                     <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
+                                    <!--div class="blog-date text-center">
+                                        <!--span>24</span>
                                         <p>Now</p>
-                                    </div>
+                                    </div-->
                                 </div>
                                 <div class="blog-cap">
-                                    <p>|   Physics</p>
-                                    <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                    <a href="blog_details.html" class="more-btn">became a member »</a>
+                                    <!--p>|   Physics</p-->
+                                    <h3><a href="{{ $article->slug }}">{{ $article->title }}</a></h3>
+                                    <!--a href="blog_details.html" class="more-btn">became a member »</a-->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6">
-                        <div class="home-blog-single mb-30">
-                            <div class="blog-img-cap">
-                                <div class="blog-img">
-                                    <img src="{{asset('img/gallery/home-blog2.png')}}" alt="">
-                                    <!-- Blog date -->
-                                    <div class="blog-date text-center">
-                                        <span>24</span>
-                                        <p>Now</p>
-                                    </div>
-                                </div>
-                                <div class="blog-cap">
-                                    <p>|   Physics</p>
-                                    <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
-                                    <a href="blog_details.html" class="more-btn">became a member »</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
+                    @endforeach
                 </div>
             </div>
         </section>

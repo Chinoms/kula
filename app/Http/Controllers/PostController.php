@@ -60,25 +60,9 @@ class PostController extends Controller
         //return $request;
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        $getArticle = Post::find($id);
-        //return $getArticle->title;
-        return view('edit')->with('getArticle', $getArticle);
-    }
+    
 
-    public function readArticle($id)
-    {
-        $getArticle = Post::find($id);
-        return view('article')->with('getArticle', $getArticle);
-    }
-
+    
     public function listArticles()
     {
         $articles = Post::paginate(10);
@@ -95,7 +79,37 @@ class PostController extends Controller
     {
         $getArticle = Post::find($id);
         //return $getArticle->title;
-        return view('edit', $id)->with('getArticle', $getArticle);
+        return view('article', $id)->with('getArticle', $getArticle);
+    }
+
+
+    public function readArticle($slug)
+    {
+        //return $slug;
+        
+        $displayArticle = Post::where('slug', $slug)->first();
+        //return $id;
+       //dd($id);
+        return view('blog')->with('displayArticle', $displayArticle);
+    }
+
+    public function showHome(){
+        $articles = Post::all();
+        return view('homepage')->with('articles', $articles);
+    }
+
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $getArticle = Post::find($id);
+        //return $getArticle->title;
+        return view('edit')->with('getArticle', $getArticle);
     }
 
     /**
