@@ -86,7 +86,7 @@ Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('auth');
 
-Route::get('/{slug}', 'App\Http\Controllers\PostController@readArticle');
+Route::get('blog/{slug}', 'App\Http\Controllers\PostController@readArticle');
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('table-list', function () {
