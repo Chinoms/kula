@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
@@ -94,7 +95,10 @@ class PostController extends Controller
     }
 
     public function showHome(){
-        $articles = Post::all();
+        $articles = DB::table('posts')
+        ->orderBy('created_at', 'desc')
+        ->limit(4)
+        ->get();
         return view('homepage')->with('articles', $articles);
     }
 
