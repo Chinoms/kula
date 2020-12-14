@@ -750,8 +750,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
                         <div class="section-tittle text-center mb-90">
-                            <span>our recent news</span>
-                            <h2>Hipos and tricks from recent blog</h2>
+                            <!--span>our recent news</span-->
+                            <h2>Kula Latest News</h2>
                         </div>
                     </div>
                 </div>
